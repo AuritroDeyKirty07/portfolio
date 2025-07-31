@@ -27,7 +27,8 @@
     padding: 1rem 2rem;
     border-bottom: 1px solid #444;
     background: inherit;
-    background-color: #222831;
+    background-color: #060607;
+    color: white;
   }
   
   .logo {
@@ -71,6 +72,51 @@
     margin: 0 auto 2rem;
   }
   
+  .brief {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 220%;
+  }
+
+  .brief > span {
+    position:relative;
+    display: inline-block;
+    color: red;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 1.25em;
+    margin-left: 1em;
+  }
+
+  .brief > span > span {
+    display: block;
+    animation: anim 5s infinite ease;
+  }
+
+  @keyframes anim {
+    0% {
+      transform: translateY(0%);
+    
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  50% {
+    transform: translateY(-200%);
+    }
+  75% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+  }
+
   .socials {
     text-align: center;
     margin-bottom: 2rem;
