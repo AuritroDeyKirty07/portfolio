@@ -95,7 +95,7 @@
 
   .brief > span > span {
     display: block;
-    animation: anim 5s infinite ease;
+    animation: anim 8s infinite ease;
   }
 
   @keyframes anim {
@@ -103,20 +103,25 @@
       transform: translateY(0%);
     
   }
-  25% {
+  17% {
     transform: translateY(-100%);
   }
-  50% {
+  32% {
     transform: translateY(-200%);
     }
-  75% {
+  48% {
     transform: translateY(-300%);
   }
-  100% {
+  65% {
     transform: translateY(-400%);
   }
+  81% {
+    transform: translateY(-500%);
   }
-
+  100% {
+    transform: translateY(-600%);
+  }
+}
   .socials {
     text-align: center;
     margin-bottom: 2rem;
@@ -138,9 +143,7 @@
   .socials .icons img:hover {
     transform: scale(1.2);
   }
-  #mail{
-    text-align: center;
-  }
+
   .resume {
     text-align: center;
     margin-bottom: 2rem;
